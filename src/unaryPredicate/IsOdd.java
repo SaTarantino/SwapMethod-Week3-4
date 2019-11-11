@@ -1,11 +1,17 @@
 package unaryPredicate;
 
+/**
+ * author Salvatore Tarantino
+ * u1860830@hud.ac.uk
+ */
+
 public class IsOdd implements UnaryPredicate<Integer>{
 
     /**
-     * Test if a number n is odd.
+     * Test whether a number n is odd.
      *
-     * Salvatore Tarantino u1860830@hud.ac.uk
+     * @param n
+     * @return true if n is odd
      */
 
     @Override

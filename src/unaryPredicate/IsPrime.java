@@ -1,12 +1,17 @@
 package unaryPredicate;
 
+/**
+ * author Salvatore Tarantino
+ * u1860830@hud.ac.uk
+ */
+
 public class IsPrime implements UnaryPredicate<Integer> {
 
     /**
      * Test if a number n is a prime number.
      *
      * @param n
-     * @return
+     * @return true if n is prime
      */
 
     @Override

@@ -11,7 +11,12 @@ public class Swap {
 
         /**
          * Swap method that take as arguments an array T and two integers for the index.
-         * If the values are two big or two small, thrown an error.
+         * If the values are too big or too small, thrown an error.
+         *
+         * @param <T> the type of array
+         * @param index1 the first index
+         * @param index2 the second index
+         * @return the array T with index1 and index2 swapped
          */
 
         if (index1 > array.length || index2 > array.length || index1 < 0 || index2 < 0) {

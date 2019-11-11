@@ -6,6 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class IsOddTest {
 
+    /**
+     * Test for IsOdd class.
+     */
+
     private IsOdd predicate = new IsOdd();
 
     @Test

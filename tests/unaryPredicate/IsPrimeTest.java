@@ -7,6 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class IsPrimeTest {
 
+    /**
+     * Test for IsPrime class.
+     */
+
     private IsPrime predicate = new IsPrime();
 
     @Test
