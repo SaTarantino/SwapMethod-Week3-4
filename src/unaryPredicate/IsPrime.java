@@ -34,7 +34,6 @@ public class IsPrime implements UnaryPredicate<Integer> {
 
         // A for loop that check for a possible dividend for n.
         // If there is one the number is not prime and return false, else return true.
-
         for (int i = 3; i < n; i = i+2) {
             if (n % i == 0) {
                 return false;

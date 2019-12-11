@@ -27,7 +27,6 @@ class SwapTest {
         swap(stringsArray, 0, 1);
         assertTrue(Equals.equals(stringsArray[0], "b"));
         assertTrue(Equals.equals(stringsArray[1], "a"));
-        System.out.println(Arrays.toString(stringsArray));
     }
 
     @Test
@@ -71,37 +70,25 @@ class SwapTest {
 
     @Test
     void testStringIndexErrorOne() throws IndexError {
-        try {
-            swap(stringsArray, 0, 10);
-            fail();
-        } catch (IndexError indexError) {
-        }
+        assertThrows(IndexError.class,
+                ()-> swap(stringsArray,0, 10));
     }
 
     @Test
     void testStringIndexErrorTwo() throws IndexError {
-        try {
-            swap(stringsArray, -1, 1);
-            fail();
-        } catch (IndexError indexError) {
-        }
+        assertThrows(IndexError.class,
+                ()-> swap(stringsArray,-1, 1));
     }
 
     @Test
     void testIntegersIndexErrorOne() throws IndexError {
-        try {
-            swap(intArray, 0, 10);
-            fail();
-        } catch (IndexError indexError) {
-        }
+        assertThrows(IndexError.class,
+                ()-> swap(intArray,0, 10));
     }
 
     @Test
     void testIntegersIndexErrorTwo() throws IndexError {
-        try {
-            swap(intArray, -1, 1);
-            fail();
-        } catch (IndexError indexError) {
-        }
+        assertThrows(IndexError.class,
+                ()-> swap(intArray,-1, 1));
     }
 }
